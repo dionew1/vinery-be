@@ -6,6 +6,25 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <h3>Base url is https://vinery-be.herokuapp.com</h3>
+
+    <h4>End Points for Vinery-be API</h4>
+
+    <ul>Wine Categories
+      <li>/api/v1/wine-categories</li>
+      <li>/api/v1/wine-categories/:id/wines</li>
+      <li>/api/v1/wine-categories/:id/foods</li>
+    </ul>
+
+    <ul>Wine
+      <li>/api/v1/wines</li>
+      <li>/api/v1/wines/:id</li>
+    </ul>
+
+    <ul>Foods
+      <li>/api/v1/foods</li>
+      <li>/api/v1/foods/:id/categories</li>
+    </ul>
   </body>
 </html>
