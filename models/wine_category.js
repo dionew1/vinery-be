@@ -17,14 +17,14 @@ let WineCategory = {
       })
   },
 
-  // findFood: function(wineCategoryId) {
-  // return database("FoodWineCategory")
-  //   .join("Food", "FoodWineCategory", "=", "Food.id")
-  //   .where("wine_category_id", wineCategoryId)
-  //   .then(function(foods) {
-  //     return foods
-  //   })
-  // }
+  findFood: function(wineCategoryId) {
+  return database("FoodWineCategory")
+    .join("Food", "FoodWineCategory.food_id", "=", "Food.id")
+    .where("wine_category_id", wineCategoryId)
+    .then(function(foods) {
+      return foods
+    })
+  }
 }
 
 module.exports = WineCategory
