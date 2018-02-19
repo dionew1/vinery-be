@@ -8,6 +8,13 @@ let Wine = {
       .then(function(wines) {
         return wines
       })
+  },
+
+  find: function(id) {
+    return database("Wine").where("id", id)
+      .then(function(wine) {
+        return wine[0]
+      })
   }
 }
 
