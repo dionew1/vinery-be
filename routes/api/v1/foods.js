@@ -4,4 +4,6 @@ const router = express.Router();
 const configuration = require('../../../knexfile')[environment]
 const foodController = require('../../../controllers/foods_controller')
 
-router.get('')
+router.get('/', foodController.index)
+
+module.exports = router
