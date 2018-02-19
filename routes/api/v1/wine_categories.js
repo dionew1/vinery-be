@@ -6,5 +6,6 @@ const wineCategoriesController = require('../../../controllers/wine_categories_c
 
 
 router.get('/', wineCategoriesController.index)
+router.get('/:id/wines', wineCategoriesController.show)
 
 module.exports = router
