@@ -5,5 +5,6 @@ const configuration = require('../../../knexfile')[environment]
 const foodController = require('../../../controllers/foods_controller')
 
 router.get('/', foodController.index)
+router.get('/:id/wine-categories', foodController.show)
 
 module.exports = router
