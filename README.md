@@ -17,6 +17,10 @@ Welcome to vinery-be. This API is built to return categories of wine, wines asso
 * `knex migrate:latest`
 * `knex seed:run`
 
+### Schema
+
+![schema](https://content.screencast.com/users/dionew1/folders/Jing/media/2da00286-7198-452a-b8f1-9b359d69b0ff/00000106.png)
+
 ### End Points
 To hit the endpoint after going through setup, run `npm start`. 
 The development base url is `localhost:3000`. 
