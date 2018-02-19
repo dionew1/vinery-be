@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/api/v1/wines', apiWines);
 app.use('/api/v1/wine-categories', apiWineCategories);
-// app.use('/api/v1/foods', apiFoods);
+app.use('/api/v1/foods', apiFoods);
 // app.use('/users', users);
 
 // catch 404 and forward to error handler
