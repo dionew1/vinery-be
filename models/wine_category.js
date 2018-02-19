@@ -10,13 +10,21 @@ let WineCategory = {
       })
   },
 
-  find: function(wineCategoryId) {
+  findWine: function(wineCategoryId) {
     return database("Wine").where("wine_category_id", wineCategoryId)
       .then(function(wines) {
         return wines
       })
-  }
+  },
 
+  // findFood: function(wineCategoryId) {
+  // return database("FoodWineCategory")
+  //   .join("Food", "FoodWineCategory", "=", "Food.id")
+  //   .where("wine_category_id", wineCategoryId)
+  //   .then(function(foods) {
+  //     return foods
+  //   })
+  // }
 }
 
 module.exports = WineCategory

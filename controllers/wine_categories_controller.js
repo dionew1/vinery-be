@@ -11,16 +11,4 @@ const index = function(req, res, next) {
   })
 }
 
-const show = function(req, res, next) {
-  let id = req.params.id
-  WineCategory.find(id)
-  .then(function(wineCategory) {
-    if(!wineCategory) {
-      return res.sendStatus(404)
-    } else {
-      return res.json(wineCategory)
-    }
-  })
-}
-
-module.exports = { index, show }
+module.exports = { index }
