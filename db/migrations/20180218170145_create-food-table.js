@@ -1,5 +1,5 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('foods', (table) => {
+  return knex.schema.createTable('Food', (table) => {
     table.increments('id').primary();
     table.string('name').unique().notNullable();
     table.timestamp('created_at').notNullable().defaultTo(knex.raw('now()'));
@@ -7,5 +7,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTable('foods');
+  return knex.schema.dropTable('Food');
 };
