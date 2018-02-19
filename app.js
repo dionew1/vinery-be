@@ -7,6 +7,9 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var apiFoods = require('./routes/api/v1/foods');
+var apiWines = require('./routes/api/v1/wines');
+var apiWineCategories = require('./routes/api/v1/wine_categories')
 
 var app = express();
 
@@ -23,7 +26,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+// app.use('/users', users);
+app.use('/api/v1/foods', apiFoods);
+app.use('/api/v1/wines', apiWines);
+app.use('/api/v1/wine-categories', apiWineCategories);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
