@@ -1,17 +1,24 @@
 body {
   padding: 50px;
   font: Helvetica;
-  background: #ACC18A;
+  background: #2A2B2A;
 }
 
 a {
-  color: #00B7FF;
+  color: #EDF4ED;
+  text-decoration: none;
+
 }
 
 h1, h3, h4, ul {
-  color: #2A2B2A;
+  color: #ACC18A;
 }
 
 li {
-  color: #5E4955;
+  color: #c6dff0;
+}
+
+footer {
+  color: #996888;
+  font-size: 10px;
 }
