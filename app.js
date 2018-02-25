@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(cors({
-  origin: ['https://vinery-fe.herokuapp.com/', 'http://localhost:3000']
+  origin: ['https://vinery-fe.herokuapp.com', 'http://localhost:3000']
 }));
 
 // uncomment after placing your favicon in /public
