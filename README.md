@@ -14,8 +14,16 @@ Welcome to vinery-be. This API is built to return categories of wine, wines asso
 * From the command line `git clone git@github.com:dionew1/vinery-be.git`
 * `cd vinery-be`
 * `npm install`
+* `psql`
+* `CREATE DATABASE vinery;`
+* `CREATE DATABASE vinvery_test;`
+* exit psql with `\q` and continue
 * `knex migrate:latest`
 * `knex seed:run`
+
+### Schema
+
+![schema](https://content.screencast.com/users/dionew1/folders/Jing/media/2da00286-7198-452a-b8f1-9b359d69b0ff/00000106.png)
 
 ### End Points
 To hit the endpoint after going through setup, run `npm start`. 
@@ -33,4 +41,4 @@ Wine
 
 Foods
 * /api/v1/foods
-* /api/v1/foods/:id/categories
+* /api/v1/foods/:id/wine-categories
