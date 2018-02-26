@@ -10,6 +10,13 @@ const WineCategory = {
       })
   },
 
+  find: function(wineCategoryId) {
+    return database("WineCategory").where("id", wineCategoryId)
+      .then(function(wineCategory) {
+        return wineCategory[0]
+      })
+  },
+
   findWine: function(wineCategoryId) {
     return database("Wine").where("wine_category_id", wineCategoryId)
       .then(function(wines) {
