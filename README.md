@@ -23,7 +23,7 @@ Welcome to vinery-be. This API is built to return categories of wine, wines asso
 
 ### Schema
 
-![schema](https://content.screencast.com/users/dionew1/folders/Jing/media/2da00286-7198-452a-b8f1-9b359d69b0ff/00000106.png)
+![schema](https://content.screencast.com/users/dionew1/folders/Jing/media/346568b9-3402-4a75-94ff-784038f31d4a/00000107.png)
 
 ### End Points
 To hit the endpoint after going through setup, run `npm start`. 
