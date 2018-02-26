@@ -10,6 +10,13 @@ const Food = {
       })
   },
 
+  find: function(foodId) {
+    return database("Food").where("id", foodId)
+      .then(function(food) {
+        return food[0]
+      })
+  },
+
   findWineCategories: function(foodId) {
     return database("FoodWineCategory")
     .join("WineCategory", "FoodWineCategory.wine_category_id", "=", "WineCategory.id")

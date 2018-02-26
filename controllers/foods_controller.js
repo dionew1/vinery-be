@@ -12,13 +12,13 @@ const index = function(req, res, next) {
 }
 
 const show = function(req, res, next) {
-  let id = req.params.id
-  Food.findWineCategories(id)
-  .then(function(wineCategories) {
-    if(!wineCategories) {
+  let foodId = req.params.id
+  Food.find(foodId)
+  .then(function(food) {
+    if(!food) {
       return res.sendStatus(404)
     } else {
-      return res.json(wineCategories)
+      return res.json(food)
     }
   })
 }
