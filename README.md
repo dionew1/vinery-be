@@ -42,4 +42,5 @@ Wine
 
 Foods
 * /api/v1/foods
+* /api/v1/foods/:id
 * /api/v1/foods/:id/wine-categories
