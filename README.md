@@ -32,6 +32,7 @@ The production base url is `https://vinery-be.herokuapp.com/`.
 
 Wine Categories
 * /api/v1/wine-categories
+* /api/v1/wine-categories/:id
 * /api/v1/wine-categories/:id/wines
 * /api/v1/wine-categories/:id/foods
 
