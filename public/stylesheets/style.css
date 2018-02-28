@@ -7,7 +7,10 @@ body {
 a {
   color: #c6dff0;
   text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
 }
 
 h1, h3, h4 {
