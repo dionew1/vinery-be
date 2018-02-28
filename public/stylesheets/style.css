@@ -5,15 +5,41 @@ body {
 }
 
 a {
-  color: #EDF4ED;
+  color: #c6dff0;
   text-decoration: none;
 
 }
 
-h1, h3, h4, ul {
+h1, h3, h4 {
   color: #ACC18A;
+  text-align: center;
 }
 
-li {
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+p {
+  color: #f9f9f9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.route {
+  font-size: 15px;
   color: #c6dff0;
+}
+
+.link {
+  margin-top: 0px;
 }

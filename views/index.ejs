@@ -7,27 +7,73 @@
   <body>
     <h1>Welcome to <%= title %></h1>
 
-    <h3>Base url is https://vinery-be.herokuapp.com</h3>
+    <p class="link">Base url is
+      <a href="https://vinery-be.herokuapp.com">https://vinery-be.herokuapp.com</a>
+    </p>
+    <p class="link">Front-end url is
+      <a href="https://vinery-fe.herokuapp.com">https://vinery-fe.herokuapp.com</a>
+    </p>
 
-    <h4>End Points for Vinery-be API</h4>
+    <h3>End Points for Vinery-be API</h3>
+    <p>
+      To view an example of the JSON response click on the route below.
+    </p>
 
-    <ul>Wine Categories
-      <li>/api/v1/wine-categories</li>
-      <li>/api/v1/wine-categories/:id</li>
-      <li>/api/v1/wine-categories/:id/wines</li>
-      <li>/api/v1/wine-categories/:id/foods</li>
-    </ul>
+    <h4>Wine Categories</h4>
+    <p class="route">
+      <a href="https://vinery-be.herokuapp.com/api/v1/wine-categories">
+        /api/v1/wine-categories
+      </a>
+    </p>
+    <p class="route">
+      <a href="https://vinery-be.herokuapp.com/api/v1/wine-categories/1">
+        /api/v1/wine-categories/:id
+      </a>
+    </p>
+    <p class="route">
+      <a href="https://vinery-be.herokuapp.com/api/v1/wine-categories/1/wines">
+        /api/v1/wine-categories/:id/wines
+      </a>
+    </p>
 
-    <ul>Wine
-      <li>/api/v1/wines</li>
-      <li>/api/v1/wines/:id</li>
-    </ul>
+    <p class="route">
+      <a href="https://vinery-be.herokuapp.com/api/v1/wine-categories/1/foods">
+        /api/v1/wine-categories/:id/foods
+      </a>
+    </p>
 
-    <ul>Foods
-      <li>/api/v1/foods</li>
-      <li>/api/v1/foods/:id</li>
-      <li>/api/v1/foods/:id/wine-categories</li>
-    </ul>
+
+    <h4>Wine</h4>
+      <p class="route">
+        <a href="https://vinery-be.herokuapp.com/api/v1/wines">
+          /api/v1/wines
+        </a>
+      </p>
+      <p class="route">
+        <a href="https://vinery-be.herokuapp.com/api/v1/wines/1">
+          /api/v1/wines/1
+        </a>
+      </p>
+
+
+    <h4>Foods</h4>
+      <p class="route">
+        <a href="https://vinery-be.herokuapp.com/api/v1/foods">
+          /api/v1/foods
+        </a>
+      </p>
+      <p>
+      </p>
+      <p class="route">
+        <a href="https://vinery-be.herokuapp.com/api/v1/foods/1">
+          /api/v1/foods/:id
+        </a>
+      </p>
+      <p class="route">
+        <a href="https://vinery-be.herokuapp.com/api/v1/foods/1/wine-categories">
+          /api/v1/foods/:id/wine-categories
+        </a>
+      </p>
 
   </body>
 </html>

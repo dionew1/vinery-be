@@ -26,9 +26,10 @@ Welcome to vinery-be. This API is built to return categories of wine, wines asso
 ![schema](https://content.screencast.com/users/dionew1/folders/Jing/media/346568b9-3402-4a75-94ff-784038f31d4a/00000107.png)
 
 ### End Points
-To hit the endpoint after going through setup, run `npm start`. 
-The development base url is `localhost:3000`. 
-The production base url is `https://vinery-be.herokuapp.com/`. 
+To hit the endpoint after going through setup, run `npm start`.
+The development base url is `localhost:3000`.
+The production base url is `https://vinery-be.herokuapp.com/`.
+The production url for front-end is `https://vinery-fe.herokuapp.com`.
 
 Wine Categories
 * /api/v1/wine-categories
